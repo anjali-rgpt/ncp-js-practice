@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map</title>
+    <script>
+        function clicker(){
+            window.open("qn3redirect.html");
+        }
+
+        function text(){
+            document.getElementById('textbox').innerHTML='This is a blue rectangle';
+        }
+
+        function untext(){
+            document.getElementById('textbox').innerHTML='';
+        }
+    </script>
+</head>
+<body>
+    <img src="ImageData/rectangle.jpg" usemap="#rectangle">
+
+    <map name="rectangle">
+        <area shape="rect" coords="199,99,800,400" onclick="clicker()" onmouseover="text()" onmouseout="untext()">      
+</map>
+
+<h2 id="textbox"></h2>
+
+</body>
+</html>

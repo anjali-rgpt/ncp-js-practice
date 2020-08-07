@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Animation</title>
+    <style>
+        img{
+            background-color: brown;
+        }
+
+        #back{
+            width:25%;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function changeColour(){
+            document.getElementById('back').style.backgroundColor='red';
+        }
+
+        function changeOut(){
+            document.getElementById('back').style.backgroundColor='green';
+        }
+
+        function redirector(){
+            window.open("qn2redirect.html", "_self");
+        }
+    </script>
+</head>
+<body>
+    <div id="back" >
+    <img id="button" src="ImageData/clickimage.jpg"  onmouseover="changeColour()" onmouseout="changeOut()" onclick="redirector()">
+</div>
+</body>
+</html>
